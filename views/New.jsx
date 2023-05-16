@@ -26,16 +26,22 @@ export class New extends Component {
           Flight Number (9 - 9999): <input type="number" name='flightNo' id='flightNo' /><br /><br />
           {/* min={9} max={9999} */}
           Where From?:   <select name="fromAirport" id="fromAirport">
-            {fromAirports.map((airport)=>{<option value={airport}>{airport}</option>})}
-            {/* <option value="American">American</option>
-            <option value="Southwest">Southwest</option>
-            <option value="United">United</option> */}
+            {/* {fromAirports.map((airport)=>{<option value={airport}>{airport}</option>})} */}
+            <option value="AUS">AUS</option>
+            <option value="DAL">DAL</option>
+            <option value="LAX">LAX</option>
+            <option value="SAN">SAN</option>
+            <option value="SEA">SEA</option>
+            <option value="SAN">SAN</option>
           </select><br /><br />
           Where To?:  <select name="toAirport" id="toAirport">
-            {toAirports.map((airport)=>{<option value={airport}>{airport}</option>})}
-            {/* <option value="American">American</option>
-            <option value="Southwest">Southwest</option>
-            <option value="United">United</option> */}
+            {/* {toAirports.map((airport)=>{<option value={airport}>{airport}</option>})} */}
+            <option value="AUS">AUS</option>
+            <option value="DAL">DAL</option>
+            <option value="LAX">LAX</option>
+            <option value="SAN">SAN</option>
+            <option value="SEA">SEA</option>
+            <option value="SAN">SAN</option>
           </select><br /><br />
 
           Departure Date: <input type="datetime-local" name='departs' id='departs' defaultValue={defaultDepDate} /><br /><br />

@@ -49,11 +49,11 @@ app.get('/', (req,res)=>{
 app.get('/flights/new', (req, res) =>{
     const newFlight = new Flights();
     const dt = newFlight.departs;
-    const at = dt; //newFlight.destinations.arrival;
+    const at = dt; 
     const arrivalDate = at.toISOString().slice(0, 16);
     const departDate = dt.toISOString().slice(0, 16);
 
-    console.log(Flights.schema.path('airport').schema.path('type').enumValues)
+    // console.log(Flights.schema.path('airport').schema.path('type').enumValues)
 
     console.log(dt)
     res.render('New', {departDate: departDate, 
